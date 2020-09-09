@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MuslimBag</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Sp_Items">
+        <item>أنقر لأختيار الذكر</item>
+        <item>سبحان الله</item>
+        <item>الحمد لله</item>
+        <item>لا اله الا  الله</item>
+        <item>الله أكبر</item>
+        <item>اللهم صلي على محمد </item>
+
+    </string-array>
+</resources>

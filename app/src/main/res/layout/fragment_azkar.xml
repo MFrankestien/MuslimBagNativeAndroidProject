@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AzkarFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground">
+
+    <TextView
+        android:id="@+id/txt_hades_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/deco_font"
+        android:text="الأذكار"
+        android:textAlignment="center"
+        android:textColor="@color/icon_color"
+        android:textSize="48dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/IV_sebha"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/sebha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Azkarspinner" />
+
+    <ImageView
+        android:id="@+id/IV_set"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="308dp"
+        android:src="@drawable/ic_refresh_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/IV_sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BTN_Sabah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/mybutton"
+        android:text="سبح"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IV_sebha" />
+
+    <Spinner
+        android:id="@+id/Azkarspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:entries="@array/Sp_Items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_hades_title"
+        android:background="#C7C7C7"/>
+
+    <TextView
+        android:id="@+id/TV_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="0"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/IV_sebha"
+        app:layout_constraintTop_toTopOf="@id/IV_sebha" />
+
+    <TextView
+        android:id="@+id/TV_total_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="196dp"
+        android:text="00"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/IV_sebha"
+        app:layout_constraintTop_toTopOf="@id/IV_sebha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
